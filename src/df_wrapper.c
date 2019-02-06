@@ -17,7 +17,7 @@ static PyObject *
 _dfk_use(PyObject *self, PyObject *args)
 {
     PyObject *space_ptr;
-    if (!PyArg_ParseTuple(args, "O", &space_ptr))
+    if (!PyArg_ParseTuple(args, "O!", &PyLong_Type, &space_ptr))
         return NULL;
 
     void *space = PyLong_AsVoidPtr(space_ptr);

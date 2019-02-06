@@ -55,7 +55,7 @@ _dfk_total_document(PyObject *self, PyObject *args)
 }
 
 // MethodDef
-static PyMethodDef _DfkMethods[] = {
+static PyMethodDef _dfkMethods[] = {
     {"setup", _dfk_setup, METH_VARARGS, "Setup space"},
     {"use", _dfk_use, METH_VARARGS, "Select space to use"},
     {"cf", _dfk_cf, METH_VARARGS, "Count term frequency"},
@@ -70,7 +70,7 @@ static struct PyModuleDef _dfkmodule = {
     "_dfk",
     "The module for counting term and document frequencies",
     -1,
-    _DfkMethods
+    _dfkMethods
 };
 
 // Module Init

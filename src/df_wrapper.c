@@ -16,11 +16,15 @@ _dfk_setup(PyObject *self, PyObject *args)
 static PyObject *
 _dfk_use(PyObject *self, PyObject *args)
 {
-    void *space;
-    if (!PyArg_ParseTuple(args, "I", &space))
+    PyObject *space_ptr;
+    if (!PyArg_ParseTuple(args, "O", &space_ptr))
         return NULL;
 
-    df_use((void *)space);
+    void *space = PyLong_AsVoidPtr(space_ptr);
+    if (space == NULL)
+        return NULL;
+
+    df_use(space);
     Py_RETURN_NONE;
 }
 

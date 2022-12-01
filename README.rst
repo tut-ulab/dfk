@@ -14,6 +14,15 @@ dfk library
 
 
 
+利用方法
+---------------
+
+::
+
+   ( cd make-index && make )
+   ( cd data && make )
+   head data/D-test-1000.dat | cut -f 1,3 | python sample/smart_es_bayes.py data/D-learn-1000.class data/D-test-1000.class
+
 
 
 

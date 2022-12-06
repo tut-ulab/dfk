@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
+
 
 module = Extension(
     name='dfk._dfk',
@@ -13,6 +14,7 @@ setup(name='dfk',
       description='The module for computing document frequencies',
       author='Shiori Hironaka',
       author_email='s143369@edu.tut.ac.jp',
+      requires=['setuptools', 'wheel'],
       packages=['dfk'],
       ext_modules=[
           module,

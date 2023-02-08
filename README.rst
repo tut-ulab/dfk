@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~
-dfk library
+The dfk library
 ~~~~~~~~~~~~~~~~~~~
 
 The dfk library provides functions to compute the corpus frequency of a string, the document frequency of a string, and the number of documents containing the string more than once.

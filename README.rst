@@ -2,8 +2,12 @@
 dfk library
 ~~~~~~~~~~~~~~~~~~~
 
-http://www.cicling.org/2009/Umemura-Church/
+The dfk library provides functions to compute the corpus frequency of a string, the document frequency of a string, and the number of documents containing the string more than once.
+The C implementation was written by Kyoji Umemura.
 
+More information can be found at
+* http://www.cicling.org/2009/Umemura-Church/
+* http://www.ss.cs.tut.ac.jp/umemura/cicling2009/
 
 
 インストール方法

@@ -25,13 +25,16 @@ More information can be found at
 テスト実行の方法
 -------------------
 
-::
+1. コーパスに出現する部分文字列の頻度を事前計算する（``make-index/`` にあるプログラムを利用）
+2. 事前計算されたテーブルを使ってdocument frequencyなどを利用する
+
+``data/`` にあるデータを使ってサンプルプログラムを実行する方法::
 
    ( cd make-index && make )  # 分析の前処理プログラムのコンパイル
    ( cd data && make )  # テストデータに対する分析の前処理の実行
    head data/D-test-1000.dat | cut -f 1,3 | python example/smart_es_bayes.py data/D-learn-1000.class data/D-test-1000.class
 
-dfkライブラリ自体の利用例を知りたい場合、 ``example/smart_es_bayes.py`` を読んでください。
+dfkライブラリの利用例を知りたい場合、 ``example/smart_es_bayes.py`` を読んでください。
 
 
 デバッグ関連のコマンドメモ
